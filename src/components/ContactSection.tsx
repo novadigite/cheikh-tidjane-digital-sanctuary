@@ -115,6 +115,26 @@ const ContactSection = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Calendly */}
+              <div className="flex items-start space-x-4 group">
+                <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 group-hover:shadow-primary transition-all duration-300">
+                  <CheckCircle size={20} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-spiritual text-lg text-foreground mb-2">Rendez-vous</h4>
+                  <p className="font-elegant text-muted-foreground mb-3">
+                    Réservez un entretien spirituel personnalisé
+                  </p>
+                  <Button
+                    onClick={() => window.open('https://calendly.com/votre-compte', '_blank')}
+                    className="bg-primary hover:bg-primary/90"
+                  >
+                    <CheckCircle size={16} className="mr-2" />
+                    Réserver un créneau
+                  </Button>
+                </div>
+              </div>
             </div>
 
             {/* Contact Form */}

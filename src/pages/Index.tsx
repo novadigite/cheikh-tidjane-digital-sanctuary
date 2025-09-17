@@ -5,6 +5,7 @@ import AudioSection from '@/components/AudioSection';
 import VideoSection from '@/components/VideoSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import Chatbot from '@/components/Chatbot';
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 };

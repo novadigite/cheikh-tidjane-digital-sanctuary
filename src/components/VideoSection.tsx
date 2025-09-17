@@ -5,35 +5,34 @@ import { Button } from '@/components/ui/button';
 const VideoSection = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
-  // Pour la démo, j'utilise des IDs YouTube d'exemple. Remplacez par les vraies vidéos du Cheikh
   const videos = [
     {
-      id: "dQw4w9WgXcQ", // Remplacer par l'ID YouTube réel
+      id: "nLnx0j8w8iA",
+      title: "Enseignement Spirituel - Cheikh Hamad Tidjane Diabaté",
+      description: "Conférence spirituelle et enseignement religieux par Cheikh Hamad Tidjane Diabaté",
+      thumbnail: `https://img.youtube.com/vi/nLnx0j8w8iA/maxresdefault.jpg`,
+      duration: ""
+    },
+    {
+      id: "84pF_pgHBhk",
+      title: "Guidance Spirituelle - Cheikh Hamad Tidjane Diabaté",
+      description: "Enseignement et guidance spirituelle dans la tradition islamique",
+      thumbnail: `https://img.youtube.com/vi/84pF_pgHBhk/maxresdefault.jpg`,
+      duration: ""
+    },
+    {
+      id: "nLnx0j8w8iA",
       title: "Les Fondements de la Foi Islamique",
       description: "Conférence sur les piliers essentiels de l'Islam et leur application dans la vie quotidienne",
-      thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`,
-      duration: "25:43"
+      thumbnail: `https://img.youtube.com/vi/nLnx0j8w8iA/maxresdefault.jpg`,
+      duration: ""
     },
     {
-      id: "dQw4w9WgXcQ", // Remplacer par l'ID YouTube réel
-      title: "L'Importance de la Prière dans l'Islam",
-      description: "Enseignement détaillé sur la signification spirituelle et pratique de la prière",
-      thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`,
-      duration: "18:32"
-    },
-    {
-      id: "dQw4w9WgXcQ", // Remplacer par l'ID YouTube réel
-      title: "Ramadan : Mois de Purification Spirituelle",
-      description: "Réflexions sur les bienfaits spirituels du jeûne et de la méditation",
-      thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`,
-      duration: "32:15"
-    },
-    {
-      id: "dQw4w9WgXcQ", // Remplacer par l'ID YouTube réel
-      title: "Les Valeurs Morales en Islam",
-      description: "Discussion sur l'éthique islamique et son application dans la société moderne",
-      thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`,
-      duration: "22:08"
+      id: "84pF_pgHBhk",
+      title: "Sagesse et Enseignements Spirituels",
+      description: "Partage de sagesse et d'enseignements dans la tradition spirituelle islamique",
+      thumbnail: `https://img.youtube.com/vi/84pF_pgHBhk/maxresdefault.jpg`,
+      duration: ""
     }
   ];
 
@@ -147,13 +146,6 @@ const VideoSection = () => {
           </div>
         )}
 
-        {/* Note for replacing with real videos */}
-        <div className="mt-12 p-4 bg-accent/50 rounded-lg border border-border max-w-4xl mx-auto">
-          <p className="font-elegant text-sm text-muted-foreground text-center">
-            <strong>Note :</strong> Remplacez les IDs YouTube de démonstration par les vrais IDs 
-            des vidéos du Cheikh dans le code source (composant VideoSection.tsx, propriété 'id' des vidéos).
-          </p>
-        </div>
       </div>
     </section>
   );

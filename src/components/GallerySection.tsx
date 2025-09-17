@@ -1,41 +1,42 @@
 import { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import cheikh1 from '@/assets/cheikh1.jpg';
+import cheikh2 from '@/assets/cheikh2.jpg';
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Pour la démo, j'utilise des images placeholder. En production, remplacez par les vraies photos
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop",
-      alt: "Cheikh Hamad Tidjane Diabaté enseignant",
+      src: cheikh1,
+      alt: "Cheikh Hamad Tidjane Diabaté lors d'une conférence",
+      title: "Conférence spirituelle"
+    },
+    {
+      src: cheikh2,
+      alt: "Cheikh Hamad Tidjane Diabaté en enseignement",
       title: "Séance d'enseignement"
     },
     {
-      src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=600&fit=crop",
-      alt: "Portrait du Cheikh",
+      src: cheikh1,
+      alt: "Portrait du Cheikh Hamad Tidjane Diabaté",
       title: "Portrait officiel"
     },
     {
-      src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop",
-      alt: "Cheikh en méditation",
+      src: cheikh2,
+      alt: "Cheikh Hamad Tidjane Diabaté avec la communauté",
+      title: "Rencontre communautaire"
+    },
+    {
+      src: cheikh1,
+      alt: "Cheikh Hamad Tidjane Diabaté en prière",
       title: "Moment de recueillement"
     },
     {
-      src: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=600&h=400&fit=crop",
-      alt: "Séance de lecture",
+      src: cheikh2,
+      alt: "Cheikh Hamad Tidjane Diabaté enseignant",
       title: "Étude des textes sacrés"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&h=400&fit=crop",
-      alt: "Conférence spirituelle",
-      title: "Conférence publique"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1506863530036-1efeddceb993?w=400&h=600&fit=crop",
-      alt: "Avec la communauté",
-      title: "Rencontre communautaire"
     }
   ];
 

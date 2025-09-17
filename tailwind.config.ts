@@ -22,10 +22,12 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          glow: "hsl(var(--secondary-glow))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -47,16 +49,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+      },
+      backgroundImage: {
+        'gradient-spiritual': 'var(--gradient-spiritual)',
+        'gradient-emerald': 'var(--gradient-emerald)',
+        'gradient-divine': 'var(--gradient-divine)',
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'emerald': 'var(--shadow-emerald)',
+        'divine': 'var(--shadow-divine)',
+      },
+      transitionTimingFunction: {
+        'divine': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
+      fontFamily: {
+        'spiritual': ['Playfair Display', 'serif'],
+        'elegant': ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
